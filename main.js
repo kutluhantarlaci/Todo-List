@@ -1,4 +1,3 @@
-
 const todoAddElm = document.getElementById('todoAdd');
 const todoInpElm = document.getElementById('todoInp');
 const todoListElm = document.getElementById('todoList');
@@ -34,9 +33,7 @@ const addTask = function () {
   todoInpElm.value = ''
 };
 
-
 const removeTask = function (id) {
-  console.log(id)
   todoList.splice(id, 1)
   let tasks = document.getElementsByClassName('task');
   tasks[id].remove()
